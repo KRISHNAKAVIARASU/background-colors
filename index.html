@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outter-box">
+        <div class="color">
+            <p>Background Color:<span class="spans">NONE</span></p>
+            
+        </div>
+        <button class="clickbtn" onclick="change()">Click Me</button>
+    </div>
+
+
+    <script>
+        let colors=['Red', 'Green', 'Blue', 'Yellow', 'Cyan', 'Magenta', 'Black', 'White', 'Orange', 'Purple', 'Pink', 'Brown', 'Gray', 'Teal', 'Navy', 'Lime', 'Maroon', 'Olive', 'Silver', 'Gold'];
+        var currentindex = 0;
+        function change(){
+             document.getElementById("outter-box").style.backgroundColor=colors[currentindex];
+             document.getElementsByClassName("spans")[0].innerHTML=colors[currentindex];
+             currentindex=(currentindex+1)%colors.length;
+        }
+    </script>
+</body>
+</html>

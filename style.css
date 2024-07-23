@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#outter-box{
+    height: 30vh;
+    margin: 25vh auto;
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+
+}
+.color{
+    margin: 13vh auto 2vh;
+    margin-left:px;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+    width: 250px;
+    padding: 15px;
+   
+    color: white;
+    border-radius: 10px;
+}
+button{
+    padding: 10px 25px;
+    border-style: none;
+    cursor: pointer;
+}
